@@ -71,10 +71,10 @@ Objectif : Implémenter une recherche en temps réel
   de la mise à jour de l'état searchItem après un delai de 1s, pour éviter déclenchement de la rechercher pour chaque caractère saisi.
  1.3 Documenter votre solution ici - Modification du composant ProductSearch : Le composant ProductSearch 
  permet de saisir un terme de recherche. La valeur du champ de recherche est synchronisée avec l'état searchTerm du parent via les props. Chaque changement dans le champ met à jour cet état. -Implémentation du debounce avec setTimeout : Pour éviter de déclencher une recherche trop fréquemment, j'ai implémenté un mécanisme de debounce dans ProductSearch. Chaque fois que l'utilisateur saisit un terme, un setTimeout est lancé pour attendre 1s avant de mettre à jour le terme de recherche. Si un autre caractère est saisi avant la fin du délai, le setTimeout précédent est annulé et un nouveau délai commence. -Utilisation de clearTimeout : Cette logique permet d'annuler le précédent délai à chaque modification dans le champ de recherche, garantissant ainsi que la recherche ne se déclenche que lorsque l'utilisateur cesse de taper pendant un certain temps. Votre réponse pour l'exercice 1 :
-
-[Capture Recherche fonctionne ProdcutSearch.]
-![](images/capture.png)
 ```
+ Recherche fonctionne ProdcutSearch.
+![](images/capture.png)
+
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
@@ -98,6 +98,7 @@ Pour gérer les préférences de langue, j'ai utilisé le **Context API** de Rea
    - Lorsque l'utilisateur sélectionne une langue, la fonction `changeLanguage` met à jour l'état du contexte, ce qui déclenche un re-rendu des composants dépendants.
 
 ```
+Ajout du sélecteur de langue
 ![git](images/capturelangue.png)
 
 
