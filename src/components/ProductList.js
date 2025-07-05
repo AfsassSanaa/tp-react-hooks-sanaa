@@ -17,6 +17,10 @@ const ProductList = ({ searchTerm }) => {
         loading,
         error,
         reload,
+        currentPage,
+        totalPages,
+        nextPage,
+        previousPage
         // TODO: Exercice 4.1 - Récupérer la fonction de rechargement
         // TODO: Exercice 4.2 - Récupérer les fonctions et états de pagination
     } = useProductSearch();
@@ -73,27 +77,25 @@ const ProductList = ({ searchTerm }) => {
             </div>
 
             {/* TODO: Exercice 4.2 - Ajouter les contrôles de pagination */}
-            {/* Exemple de structure pour la pagination :
-      <nav className="mt-4">
-        <ul className="pagination justify-content-center">
-          <li className="page-item">
-            <button className="page-link" onClick={previousPage}>
-              Précédent
-            </button>
-          </li>
-          <li className="page-item">
+            <nav className="mt-4">
+                <ul className="pagination justify-content-center">
+                    <li className="page-item">
+                        <button className="page-link" onClick={previousPage}>
+                            Précédent
+                        </button>
+                    </li>
+                    <li className="page-item">
             <span className="page-link">
               Page {currentPage} sur {totalPages}
             </span>
-          </li>
-          <li className="page-item">
-            <button className="page-link" onClick={nextPage}>
-              Suivant
-            </button>
-          </li>
-        </ul>
-      </nav>
-      */}
+                    </li>
+                    <li className="page-item">
+                        <button className="page-link" onClick={nextPage}>
+                            Suivant
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </div>
     );
 };
