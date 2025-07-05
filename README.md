@@ -97,9 +97,9 @@ Pour gérer les préférences de langue, j'ai utilisé le **Context API** de Rea
    - Ce composant utilise le `LanguageContext` pour accéder à la langue actuelle et à la fonction `changeLanguage`.  
    - Lorsque l'utilisateur sélectionne une langue, la fonction `changeLanguage` met à jour l'état du contexte, ce qui déclenche un re-rendu des composants dépendants.
 
-
-![git](images/capturelangue.png)
 ```
+![git](images/capturelangue.png)
+
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
@@ -112,11 +112,11 @@ _Votre réponse pour l'exercice 3 :_
 ```
 3.1 Le hook useDebounce permet de retarder l'exécution d'une action (comme une requête ou une mise à jour d'état) jusqu'à ce qu'une période de temps donnée se soit écoulée sans nouvelles modifications.
 3.2 Le hook useLocalStorage permet de gérer facilement des données dans le stockage local du navigateur. Il synchronise une valeur avec une clé dans localStorage pour garantir la persistance des données.
-
+```
 
 ![git](images/capture3.png)
 ```
-
+```
 ### Exercice 4 : Gestion Asynchrone et Pagination
 #### Objectif : Gérer le chargement et la pagination
 
@@ -134,25 +134,28 @@ _Votre réponse pour l'exercice 4 :_
 - La fonction reload appelle désormais directement fetchProducts, garantissant qu'elle fonctionne sans dupliquer la logique.
 - appel useEffect : utilise toujours fetchProducts pour la récupération initiale des données lorsque le composant est monté.
 - Ajout button recharger au ProductList component.
-
+```
 L'ajout du button de recharge
 ![git](images/capture4.png)
 
 Chargement lors du clique en recharge
 ![git](images/capturee4.png)
-
+```
 4.2 **Gérer le chargement et la pagination**  
 
  **Implémentation de la pagination**  
    - Gestion des pages avec `nextPage` et `previousPage`.  
-   
+   ```
    
   Ajout de la pagination
   ![git](images/capture4.2.png)
-  
-  Fonctionement de la pagination en clique sur suivant
-  ![git](images/capturee4.2.png)
-```
+
+
+Fonctionement de la pagination en clique sur suivant
+![git](images/capturee4.2.png)
+
+
+
 
 ## Rendu
 
